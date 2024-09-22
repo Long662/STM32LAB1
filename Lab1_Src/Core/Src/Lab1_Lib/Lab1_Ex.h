@@ -27,4 +27,8 @@ void Traffic_light_action();
 void Lab1_Ex4_Init();
 void display7SEG(int num);
 
+// Exercise 5
+void Lab1_Ex5_Init();
+void Lab1_Ex5_Run();
+
 #endif /* SRC_LAB1_LIB_LAB1_EX1_H_ */

@@ -91,16 +91,14 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  //Lab1_Ex1_Init();
-  Lab1_Ex4_Init();
+  Lab1_Ex5_Init();
   int counter = 0;
   while (1)
   {
 	  //Lab1_Ex1_Run();
 	  //Lab1_Ex2_Run();
 	  //Lab1_Ex3_Run();
-	  if(counter >= 10)	counter = 0;
-	  display7SEG(counter++);
+	  Lab1_Ex5_Run();
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 

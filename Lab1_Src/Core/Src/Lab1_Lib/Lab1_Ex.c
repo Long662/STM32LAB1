@@ -51,6 +51,9 @@ void Lab1_Ex2_Run(){
 
 //-----------------------------------------------------------------------------
 // BEGIN of exercise 3
+int count1 = 0;
+int count2 = 5;
+
 void Lab1_Ex3_Init(){
 	HAL_GPIO_WritePin(GPIOB, RED1_Pin, SET);
 	HAL_GPIO_WritePin(GPIOB, YELLOW1_Pin, SET);
@@ -62,8 +65,6 @@ void Lab1_Ex3_Init(){
 }
 
 void Lab1_Ex3_Run(){
-	static int count1 = 0;
-	static int count2 = 5;
 	Traffic_light_action(RED1_Pin, YELLOW1_Pin, GREEN1_Pin, count1);
 	Traffic_light_action(RED2_Pin, YELLOW2_Pin, GREEN2_Pin, count2);
 	count1++;
@@ -109,4 +110,36 @@ void display7SEG(int num){
 }
 
 // END of exercise 4
+//-----------------------------------------------------------------------------
+
+
+//-----------------------------------------------------------------------------
+// BEGIN of exercise 5
+LED7SEG_Name SEG1;
+LED7SEG_Name SEG2;
+
+void Lab1_Ex5_Init(){
+	Lab1_Ex3_Init();
+	LED7SEG_Init(&SEG1,	SEG1_A_GPIO_Port, SEG1_A_Pin,
+						SEG1_B_GPIO_Port, SEG1_B_Pin,
+						SEG1_C_GPIO_Port, SEG1_C_Pin,
+						SEG1_D_GPIO_Port, SEG1_D_Pin,
+						SEG1_E_GPIO_Port, SEG1_E_Pin,
+						SEG1_F_GPIO_Port, SEG1_F_Pin,
+						SEG1_G_GPIO_Port, SEG1_G_Pin);
+	LED7SEG_Init(&SEG2,	SEG2_A_GPIO_Port, SEG2_A_Pin,
+						SEG2_B_GPIO_Port, SEG2_B_Pin,
+						SEG2_C_GPIO_Port, SEG2_C_Pin,
+						SEG2_D_GPIO_Port, SEG2_D_Pin,
+						SEG2_E_GPIO_Port, SEG2_E_Pin,
+						SEG2_F_GPIO_Port, SEG2_F_Pin,
+						SEG2_G_GPIO_Port, SEG2_G_Pin);
+}
+
+void Lab1_Ex5_Run(){
+	LED7SEG_Write(&SEG1, (count1 > 5)?((count1 > 8)?(10 - count1):(8-count1)):(5 - count1));
+	LED7SEG_Write(&SEG2, (count2 > 5)?((count2 > 8)?(10 - count2):(8-count2)):(5 - count2));
+	Lab1_Ex3_Run();
+}
+// END of exercise 5
 //-----------------------------------------------------------------------------
