@@ -92,12 +92,15 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   //Lab1_Ex1_Init();
-  Lab1_Ex3_Init();
+  Lab1_Ex4_Init();
+  int counter = 0;
   while (1)
   {
 	  //Lab1_Ex1_Run();
 	  //Lab1_Ex2_Run();
-	  Lab1_Ex3_Run();
+	  //Lab1_Ex3_Run();
+	  if(counter >= 10)	counter = 0;
+	  display7SEG(counter++);
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
@@ -151,11 +154,31 @@ static void MX_GPIO_Init(void)
   GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOA, SEG1_A_Pin|SEG1_B_Pin|SEG1_C_Pin|SEG1_D_Pin
+                          |SEG1_E_Pin|SEG1_F_Pin|SEG1_G_Pin|SEG2_A_Pin
+                          |SEG2_B_Pin|SEG2_C_Pin|SEG2_D_Pin|SEG2_E_Pin
+                          |SEG2_F_Pin|SEG2_G_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, RED1_Pin|YELLOW1_Pin|GREEN1_Pin|RED2_Pin
                           |YELLOW2_Pin|GREEN2_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : SEG1_A_Pin SEG1_B_Pin SEG1_C_Pin SEG1_D_Pin
+                           SEG1_E_Pin SEG1_F_Pin SEG1_G_Pin SEG2_A_Pin
+                           SEG2_B_Pin SEG2_C_Pin SEG2_D_Pin SEG2_E_Pin
+                           SEG2_F_Pin SEG2_G_Pin */
+  GPIO_InitStruct.Pin = SEG1_A_Pin|SEG1_B_Pin|SEG1_C_Pin|SEG1_D_Pin
+                          |SEG1_E_Pin|SEG1_F_Pin|SEG1_G_Pin|SEG2_A_Pin
+                          |SEG2_B_Pin|SEG2_C_Pin|SEG2_D_Pin|SEG2_E_Pin
+                          |SEG2_F_Pin|SEG2_G_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : RED1_Pin YELLOW1_Pin GREEN1_Pin RED2_Pin
                            YELLOW2_Pin GREEN2_Pin */

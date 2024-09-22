@@ -7,7 +7,7 @@
 
 #include "Lab1_Ex.h"
 //-----------------------------------------------------------------------------
-// Exercise 1
+// BEGIN of exercise 1
 void Lab1_Ex1_Init(){
 	HAL_GPIO_WritePin(RED1_GPIO_Port, RED1_Pin, SET);
 	HAL_GPIO_WritePin(YELLOW1_GPIO_Port, YELLOW1_Pin, RESET);
@@ -17,12 +17,12 @@ void Lab1_Ex1_Run(){
 	HAL_GPIO_TogglePin(RED1_GPIO_Port, RED1_Pin);
 	HAL_GPIO_TogglePin(YELLOW1_GPIO_Port, YELLOW1_Pin);
 }
-// End of exercise 1
+// END of exercise 1
 //-----------------------------------------------------------------------------
 
 
 //-----------------------------------------------------------------------------
-// Exercise 2
+// BEGIN of exercise 2
 void Lab1_Ex2_Init(){
 	HAL_GPIO_WritePin(RED1_GPIO_Port, RED1_Pin, RESET);
 	HAL_GPIO_WritePin(YELLOW1_GPIO_Port, YELLOW1_Pin, SET);
@@ -46,11 +46,11 @@ void Lab1_Ex2_Run(){
 	}
 	count++;
 }
-// End of exercise 2
+// END of exercise 2
 //-----------------------------------------------------------------------------
 
 //-----------------------------------------------------------------------------
-// Exercise 3
+// BEGIN of exercise 3
 void Lab1_Ex3_Init(){
 	HAL_GPIO_WritePin(GPIOB, RED1_Pin, SET);
 	HAL_GPIO_WritePin(GPIOB, YELLOW1_Pin, SET);
@@ -86,5 +86,27 @@ void Traffic_light_action(int Red_pin, int Yellow_pin, int Green_pin, int Time_i
 				break;
 	}
 }
-// End of exercise 2
+// END of exercise 3
+//-----------------------------------------------------------------------------
+
+
+//-----------------------------------------------------------------------------
+// BEGIN of exercise 4
+LED7SEG_Name SEG1;
+
+void Lab1_Ex4_Init(){
+	LED7SEG_Init(&SEG1,	SEG1_A_GPIO_Port, SEG1_A_Pin,
+						SEG1_B_GPIO_Port, SEG1_B_Pin,
+						SEG1_C_GPIO_Port, SEG1_C_Pin,
+						SEG1_D_GPIO_Port, SEG1_D_Pin,
+						SEG1_E_GPIO_Port, SEG1_E_Pin,
+						SEG1_F_GPIO_Port, SEG1_F_Pin,
+						SEG1_G_GPIO_Port, SEG1_G_Pin);
+}
+
+void display7SEG(int num){
+	LED7SEG_Write(&SEG1, num);
+}
+
+// END of exercise 4
 //-----------------------------------------------------------------------------

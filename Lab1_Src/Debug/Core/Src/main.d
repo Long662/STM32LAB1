@@ -21,7 +21,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
- D:/Documents/DaiHoc/HK241/VXL_MCU/Labs/Lab1/Lab1_GIT/Lab1_Src/Core/Src/Lab1_Lib/Lab1_Ex.h
+ D:/Documents/DaiHoc/HK241/VXL_MCU/Labs/Lab1/Lab1_GIT/Lab1_Src/Core/Src/Lab1_Lib/Lab1_Ex.h \
+ D:/Documents/DaiHoc/HK241/VXL_MCU/Labs/Lab1/Lab1_GIT/Lab1_Src/Core/Src/Lab1_Lib/MyLED7SEG.h
 
 ../Core/Inc/main.h:
 
@@ -70,3 +71,5 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 
 D:/Documents/DaiHoc/HK241/VXL_MCU/Labs/Lab1/Lab1_GIT/Lab1_Src/Core/Src/Lab1_Lib/Lab1_Ex.h:
+
+D:/Documents/DaiHoc/HK241/VXL_MCU/Labs/Lab1/Lab1_GIT/Lab1_Src/Core/Src/Lab1_Lib/MyLED7SEG.h:
