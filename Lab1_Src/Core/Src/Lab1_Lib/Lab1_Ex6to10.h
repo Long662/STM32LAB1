@@ -24,4 +24,7 @@ void setNumberOnClock(int num);
 // Exercise 9
 void clearNumberOnClock(int num);
 
+// Exercise 10
+void Lab1_Ex10_Run();
+
 #endif /* SRC_LAB1_LIB_LAB1_EX6TO10_H_ */

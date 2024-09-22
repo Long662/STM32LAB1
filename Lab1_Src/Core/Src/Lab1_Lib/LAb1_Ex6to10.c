@@ -56,3 +56,38 @@ void clearNumberOnClock(int num){
 }
 // END of exercise 9
 //-----------------------------------------------
+
+
+//-----------------------------------------------
+// BEGIN of exercise 10
+void Lab1_Ex10_Run(){
+	static int count_sec;
+	static int count_min;
+	static int count_hour;
+
+	ClearAllClock();
+
+	int hour_num = count_hour % 12;
+	int min_num	= count_min / 5;
+	int sec_num = count_sec / 5;
+
+	setNumberOnClock(hour_num);
+	setNumberOnClock(min_num);
+	setNumberOnClock(sec_num);
+
+	if (count_sec >= 59){
+		if (count_min >= 59){
+			count_hour++;
+			count_min = 0;
+		}
+		else{
+			count_min++;
+		}
+		count_sec = 0;
+	}
+	else
+		count_sec++;
+//	count_sec = (count_sec >= 43199)?0:(count_sec + 1);
+}
+// END of exercise 10
+//-----------------------------------------------

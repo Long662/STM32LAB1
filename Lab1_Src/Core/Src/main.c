@@ -92,16 +92,10 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   Lab1_Ex6To10_Init();
-  int count_num = 0;
   while (1)
   {
-	  setNumberOnClock(count_num);
-	  if (count_num > 0)
-		  clearNumberOnClock(count_num - 1);
-	  else
-		  clearNumberOnClock(11);
-	  count_num = (count_num >= 11)?0:(count_num + 1);
-	  HAL_Delay(500);
+	  Lab1_Ex10_Run();
+	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
