@@ -1,0 +1,9 @@
+Lab1_Ex.c:11:6:Lab1_Ex1_Init	8	static
+Lab1_Ex.c:16:6:Lab1_Ex1_Run	8	static
+Lab1_Ex.c:26:6:Lab1_Ex2_Init	8	static
+Lab1_Ex.c:32:6:Lab1_Ex2_Run	8	static
+Lab1_Ex.c:54:6:Lab1_Ex3_Init	8	static
+Lab1_Ex.c:64:6:Lab1_Ex3_Run	8	static
+Lab1_Ex.c:76:6:Traffic_light_action	24	static
+Lab1_Ex.c:97:6:Lab1_Ex4_Init	56	static
+Lab1_Ex.c:107:6:display7SEG	16	static
