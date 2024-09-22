@@ -17,5 +17,9 @@ void Lab1_Ex1_Run();
 void Lab1_Ex2_Init();
 void Lab1_Ex2_Run();
 
+// Exercise 3
+void Lab1_Ex3_Init();
+void Lab1_Ex3_Run();
+void Traffic_light_action();
 
 #endif /* SRC_LAB1_LIB_LAB1_EX1_H_ */

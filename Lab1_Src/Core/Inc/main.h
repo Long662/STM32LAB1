@@ -64,6 +64,12 @@ void Error_Handler(void);
 #define YELLOW1_GPIO_Port GPIOB
 #define GREEN1_Pin GPIO_PIN_2
 #define GREEN1_GPIO_Port GPIOB
+#define RED2_Pin GPIO_PIN_3
+#define RED2_GPIO_Port GPIOB
+#define YELLOW2_Pin GPIO_PIN_4
+#define YELLOW2_GPIO_Port GPIOB
+#define GREEN2_Pin GPIO_PIN_5
+#define GREEN2_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
