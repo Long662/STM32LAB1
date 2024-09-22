@@ -362,10 +362,10 @@
      <ITEM name="TopLineAddress">E000E000</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="600" x="1110" flags="0000000b" y="1019" h="400" pid="100" iid="1">
+   <POPUP w="1065" x="1110" flags="0000000a" y="1019" h="400" pid="100" iid="1">
     <PROPERTIES/>
    </POPUP>
-   <POPUP w="300" x="1130" flags="0000000b" y="1039" h="300" pid="101" iid="1">
+   <POPUP w="300" x="1130" flags="0000000a" y="1039" h="300" pid="101" iid="1">
     <PROPERTIES>
      <ITEM name="Address Column Width">87</ITEM>
      <ITEM name="AutoResize">No</ITEM>
@@ -385,7 +385,7 @@
    <POPUP w="30" x="1150" flags="00000008" y="1059" h="20" pid="102" iid="1">
     <PROPERTIES/>
    </POPUP>
-   <POPUP w="320" x="1170" flags="0000000b" y="1079" h="240" pid="104" iid="1">
+   <POPUP w="320" x="1170" flags="0000000a" y="1079" h="240" pid="104" iid="1">
     <PROPERTIES/>
    </POPUP>
    <POPUP w="22" x="1190" flags="00000008" y="1099" h="18" pid="350" iid="1">
