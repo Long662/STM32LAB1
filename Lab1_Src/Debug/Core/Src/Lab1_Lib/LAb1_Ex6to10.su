@@ -1,0 +1,6 @@
+Lab1_Ex6to10.c:14:6:Lab1_Ex6To10_Init	4	static
+Lab1_Ex6to10.c:22:6:Lab1_Ex6_Run	8	static
+Lab1_Ex6to10.c:34:6:ClearAllClock	16	static
+Lab1_Ex6to10.c:45:6:setNumberOnClock	16	static
+Lab1_Ex6to10.c:54:6:clearNumberOnClock	16	static
+Lab1_Ex6to10.c:63:6:Lab1_Ex10_Run	24	static
