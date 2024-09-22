@@ -36,6 +36,23 @@ void ClearAllClock(){
 		HAL_GPIO_WritePin(GPIOA, LED_Pin[i], SET);
 	}
 }
-// END of exercise 6
+// END of exercise 7
 //-----------------------------------------------
 
+
+//-----------------------------------------------
+// BEGIN of exercise 8
+void setNumberOnClock(int num){
+	HAL_GPIO_WritePin(GPIOA, LED_Pin[num], RESET);
+}
+// END of exercise 8
+//-----------------------------------------------
+
+
+//-----------------------------------------------
+// BEGIN of exercise 9
+void clearNumberOnClock(int num){
+	HAL_GPIO_WritePin(GPIOA, LED_Pin[num], SET);
+}
+// END of exercise 9
+//-----------------------------------------------

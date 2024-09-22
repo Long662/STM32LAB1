@@ -18,4 +18,10 @@ void Lab1_Ex6_Run();
 // Exercise 7
 void ClearAllClock();
 
+// Exercise 8
+void setNumberOnClock(int num);
+
+// Exercise 9
+void clearNumberOnClock(int num);
+
 #endif /* SRC_LAB1_LIB_LAB1_EX6TO10_H_ */
