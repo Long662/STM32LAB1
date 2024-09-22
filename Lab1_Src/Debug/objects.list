@@ -1,4 +1,4 @@
-"./Core/Src/Lab1_Lib/Lab1_Ex1.o"
+"./Core/Src/Lab1_Lib/Lab1_Ex.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32f1xx_hal_msp.o"
 "./Core/Src/stm32f1xx_it.o"
