@@ -1,2 +1,3 @@
-LAb1_Ex6to10.c:15:6:Lab1_Ex6_Init	16	static
-LAb1_Ex6to10.c:33:6:Lab1_Ex6_Run	8	static
+Lab1_Ex6to10.c:14:6:Lab1_Ex6To10_Init	16	static
+Lab1_Ex6to10.c:22:6:Lab1_Ex6_Run	8	static
+Lab1_Ex6to10.c:34:6:ClearAllClock	16	static

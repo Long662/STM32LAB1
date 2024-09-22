@@ -91,7 +91,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  Lab1_Ex6_Init();
+  Lab1_Ex6To10_Init();
   while (1)
   {
 	  Lab1_Ex6_Run();
