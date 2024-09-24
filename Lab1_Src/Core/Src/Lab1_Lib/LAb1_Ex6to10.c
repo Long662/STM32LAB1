@@ -60,7 +60,7 @@ void clearNumberOnClock(int num){
 
 //-----------------------------------------------
 // BEGIN of exercise 10
-void Lab1_Ex10_Run(){
+void Lab1_Ex10_AutoRun(){
 	static int count_sec;
 	static int count_min;
 	static int count_hour;
@@ -88,6 +88,17 @@ void Lab1_Ex10_Run(){
 	else
 		count_sec++;
 //	count_sec = (count_sec >= 43199)?0:(count_sec + 1);
+}
+
+void Lab1_Ex10_EnterTime(uint8_t hours, uint8_t minutes, uint8_t seconds){
+	ClearAllClock();
+	// Error check
+	if(hours >= 24 || minutes >= 60 || seconds >= 60){
+		Lab1_Ex6_Run(); // When error, turn on everyled in sequence
+	}
+	setNumberOnClock(hours % 12);
+	setNumberOnClock(minutes / 5);
+	setNumberOnClock(seconds / 5);
 }
 // END of exercise 10
 //-----------------------------------------------

@@ -1,4 +1,4 @@
-Core/Src/Lab1_Lib/Lab1_Ex6to10.o: ../Core/Src/Lab1_Lib/Lab1_Ex6to10.c \
+Core/Src/Lab1_Lib/LAb1_Ex6to10.o: ../Core/Src/Lab1_Lib/LAb1_Ex6to10.c \
  ../Core/Src/Lab1_Lib/Lab1_Ex6to10.h ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \

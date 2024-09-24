@@ -5,13 +5,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Core/Src/Lab1_Lib/Lab1_Ex6to10.c 
+../Core/Src/Lab1_Lib/LAb1_Ex6to10.c 
 
 OBJS += \
-./Core/Src/Lab1_Lib/Lab1_Ex6to10.o 
+./Core/Src/Lab1_Lib/LAb1_Ex6to10.o 
 
 C_DEPS += \
-./Core/Src/Lab1_Lib/Lab1_Ex6to10.d 
+./Core/Src/Lab1_Lib/LAb1_Ex6to10.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
