@@ -94,9 +94,9 @@ int main(void)
   Lab1_Ex6To10_Init();
   while (1)
   {
-	  //Lab1_Ex10_AutoRun();
-	  Lab1_Ex10_EnterTime(9, 55, 30);
-	  HAL_Delay(1000);
+	  Lab1_Ex10_AutoRun();
+	  //Lab1_Ex10_EnterTime(9, 55, 30);
+	  HAL_Delay(10);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
