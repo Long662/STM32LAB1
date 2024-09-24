@@ -87,7 +87,6 @@ void Lab1_Ex10_AutoRun(){
 	}
 	else
 		count_sec++;
-//	count_sec = (count_sec >= 43199)?0:(count_sec + 1);
 }
 
 void Lab1_Ex10_EnterTime(uint8_t hours, uint8_t minutes, uint8_t seconds){
@@ -97,8 +96,8 @@ void Lab1_Ex10_EnterTime(uint8_t hours, uint8_t minutes, uint8_t seconds){
 		Lab1_Ex6_Run(); // When error, turn on everyled in sequence
 	}
 	setNumberOnClock(hours % 12);
-	setNumberOnClock(minutes / 5);
-	setNumberOnClock(seconds / 5);
+	setNumberOnClock(minutes/5);
+	setNumberOnClock(seconds/5);
 }
 // END of exercise 10
 //-----------------------------------------------
